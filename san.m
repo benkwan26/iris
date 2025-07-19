@@ -1,5 +1,5 @@
-function iristest
-% CISC371, Practice 3, code for a single articicial neuron
+function san
+% Code for a single articicial neuron
 % IRISTEST will load Fisher's Iris data, test, and plot results
 
     % Use sepal measurement of Fisher's Iris data

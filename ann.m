@@ -1,6 +1,5 @@
-function new3q1_00000000
-% P3Q1: CISC371, Practice 3, Question 1
-% CISC371, Fall 2024: IRIS sepal data for species I. versicolor
+function ann
+% IRIS sepal data for species I. versicolor
 
     % Set the size of the ANN: Lnum neurons in hidden layer
     Lnum = 3;
@@ -266,10 +265,7 @@ function [tmin,fmin,ix]=annsteepfixed(objgradf,w0,s,imax_in,eps_in)
     [fmin gval] = objgradf(tmin);
     ix = 0;
     while (norm(gval)>epsilon & ix<imax)
-
-    % %
-    % % STUDENT CODE GOES HERE: REPLACE "BREAK" WITH WORKING CODE
-    % %
+        % Compute steepest descent
         tmin = tmin + s * -gval';
         [fmin gval] = objgradf(tmin);
         ix = ix + 1;
